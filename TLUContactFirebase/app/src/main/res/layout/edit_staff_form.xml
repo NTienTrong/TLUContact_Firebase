@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F8FA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_staff_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        app:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin nhân viên"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="24dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/staff_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_default_avatar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/change_staff_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_color"
+                android:text="Thay đổi ảnh đại diện"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/staff_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã nhân viên"
+                android:layout_marginBottom="8dp"
+                android:enabled="true"/>
+
+            <EditText
+                android:id="@+id/staff_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ và tên"
+                android:layout_marginBottom="8dp"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/staff_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginBottom="8dp"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/staff_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                android:inputType="phone"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/staff_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Đơn vị"
+                android:layout_marginBottom="16dp"
+                android:focusable="false"
+                android:clickable="true"
+                />
+
+            <Button
+                android:id="@+id/save_staff_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lưu thông tin"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

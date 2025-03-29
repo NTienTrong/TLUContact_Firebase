@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/filter_all" android:title="Tất cả" />
+    <item android:id="@+id/filter_khoa" android:title="Khoa" />
+    <item android:id="@+id/filter_phong" android:title="Phòng" />
+    <item android:id="@+id/filter_ban" android:title="Ban" />
+</menu>

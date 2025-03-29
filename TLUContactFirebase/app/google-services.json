@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704773465361",
+    "project_id": "tlucontact-a701e",
+    "storage_bucket": "tlucontact-a701e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704773465361:android:a16b04e269ae1bb1c5d8b0",
+        "android_client_info": {
+          "package_name": "com.edu.tlucontact"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHbDL4u13B0ti9IO6A6R5tntXHxfzNTfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
